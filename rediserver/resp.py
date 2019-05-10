@@ -14,6 +14,7 @@ class Errors:
     INVALID_CURSOR = Error('ERR', 'invalid cursor')
     NOT_INT = Error('ERR', 'value is not an integer or out of range')
     WRONGTYPE = Error('WRONGTYPE', 'Operation against a key holding the wrong kind of value')
+    KEYERROR = Error('KEYERROR', 'Key not found')
 
 
 async def read_command(reader):
